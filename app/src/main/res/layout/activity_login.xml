@@ -17,6 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493"
         app:srcCompat="@drawable/user" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -46,8 +47,6 @@
         android:layout_height="52dp"
         android:layout_marginBottom="200dp"
         android:hint="Email"
-        android:maxWidth="32dp"
-        android:minWidth="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,10 +54,10 @@
         app:layout_constraintVertical_bias="0.456">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:visibility="visible" />
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -72,14 +71,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.276"
         app:rippleColor="#2196F3"
         app:strokeColor="#2196F3" />
 
     <com.google.android.material.textfield.TextInputLayout
 
         android:id="@+id/password"
-        android:layout_width="357dp"
-        android:layout_height="61dp"
+        android:layout_width="345dp"
+        android:layout_height="52dp"
         android:layout_marginBottom="140dp"
         android:hint="password"
         android:maxWidth="32dp"
@@ -93,8 +93,21 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:visibility="visible" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an Account Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

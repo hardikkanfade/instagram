@@ -5,10 +5,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.instagram.databinding.ActivityLoginBinding
 import com.example.instagram.model.user
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.auth.User
+
 
 class SignupActivity : AppCompatActivity() {
 
@@ -17,6 +18,11 @@ class SignupActivity : AppCompatActivity() {
     private val firestore: FirebaseFirestore by lazy { FirebaseFirestore.getInstance() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
+        // Configure sign-in to request the user's ID, email address, and basic
+
+
         super.onCreate(savedInstanceState)
 
         // Initialize Firebase
